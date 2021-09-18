@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+const express = require('express');
 const Discord = require('discord.js');
 const twss = require('twss');
 const client = new Discord.Client({
@@ -26,3 +27,12 @@ client.on('message', msg => {
 });
 
 client.login(process.env.CLIENT_TOKEN);
+
+const app = express();
+const port = 3000;
+app.get('/', (req, res) => {
+    res.send(`Checked Health @ [${new Date()}]`);
+});
+app.listen(process.env.PORT || port, () => {
+    console.log(`App listening at http://localhost:${port}`);
+});
