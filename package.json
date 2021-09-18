@@ -10,6 +10,9 @@
         "discord",
         "discord-bot"
     ],
+    "engines": {
+        "node": "16.x"
+    },
     "author": "kumamaki",
     "license": "MIT",
     "dependencies": {
