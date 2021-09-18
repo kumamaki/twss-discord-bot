@@ -15,7 +15,7 @@ client.on("ready", () => {
 })
 
 client.on('message', msg => {
-    twss.threshold = 0.75;
+    twss.threshold = 0.81;
     console.log('msg.content 👉 ', msg.content);
     console.log('twss.prob(msg.content) 👉 ', twss.prob(msg.content));
     if (
