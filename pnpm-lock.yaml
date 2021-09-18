@@ -4,11 +4,13 @@ specifiers:
   discord.js: ^13.1.0
   dotenv: ^10.0.0
   express: ^4.17.1
+  twss: ^0.1.6
 
 dependencies:
   discord.js: 13.1.0
   dotenv: 10.0.0
   express: 4.17.1
+  twss: 0.1.6
 
 packages:
 
@@ -97,6 +99,11 @@ packages:
   /callsites/3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
+    dev: false
+
+  /colors/1.4.0:
+    resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==}
+    engines: {node: '>=0.1.90'}
     dev: false
 
   /combined-stream/1.0.8:
@@ -366,6 +373,12 @@ packages:
       ee-first: 1.1.1
     dev: false
 
+  /optimist/0.3.7:
+    resolution: {integrity: sha1-yQlBrVnkJzMokjB00s8ufLxuwNk=}
+    dependencies:
+      wordwrap: 0.0.3
+    dev: false
+
   /ow/0.27.0:
     resolution: {integrity: sha512-SGnrGUbhn4VaUGdU0EJLMwZWSupPmF46hnTRII7aCLCrqixTAC5eKo8kI4/XXf1eaaI8YEVT+3FeGNJI9himAQ==}
     engines: {node: '>=12'}
@@ -474,6 +487,14 @@ packages:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
     dev: false
 
+  /twss/0.1.6:
+    resolution: {integrity: sha1-k8sxeYJGQ8gsD5B7b+35fE94leo=}
+    hasBin: true
+    dependencies:
+      colors: 1.4.0
+      optimist: 0.3.7
+    dev: false
+
   /type-fest/1.4.0:
     resolution: {integrity: sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==}
     engines: {node: '>=10'}
@@ -505,6 +526,11 @@ packages:
   /vary/1.1.2:
     resolution: {integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=}
     engines: {node: '>= 0.8'}
+    dev: false
+
+  /wordwrap/0.0.3:
+    resolution: {integrity: sha1-o9XabNXAvAAI03I0u68b7WMFkQc=}
+    engines: {node: '>=0.4.0'}
     dev: false
 
   /ws/7.5.5:
